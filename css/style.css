@@ -1,0 +1,255 @@
+*{font-family:Tahoma;    user-select: none;}
+/* main border */
+#border{
+    margin: 0 auto;
+    width: 300px;
+    height:450px;
+    border:2px solid black;
+    border-radius:10px;
+}
+
+/* centic */
+#centic{
+    display:block;
+    margin:0 auto;
+    text-align:center;
+    width:150px;
+    color:white;
+    font-weight:bold;
+    background-color:darkslategray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* input holder */
+#holderInput{
+    margin: 0 auto;
+    text-align:centeR;
+    margin-top:30px;
+}
+
+#holderInput input[type="text"]{
+    padding:5px;
+}
+
+/* map */
+#map{
+    margin: 0 auto;
+    margin-top:25px;
+    margin-bottom:15px;
+    width:290px;
+    height:290px;
+    border:1px solid #ccc;
+    position:relative;
+    background: url("../img/pipes.png");
+}
+
+#map span#centic2{
+    position:absolute;
+    top:-15px;
+    left:20px;
+    border-radius:4px;
+    background-color:darkslategray;
+    color:white;
+    padding:5px;
+ 
+}
+
+.trinagle{
+  position:absolute;
+    left:3px;;
+    top:26px;
+  width: 200px;
+  height: 200px;
+  border: 10px solid black;
+  width: 0;
+  height: 0;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: darkslategray;
+  border-bottom-color: transparent;
+}
+
+/* map > nearest ones */
+.nearest{
+    cursor:pointer;
+    width:30px;
+    height:30px;
+    border-radius:100px;
+    border:2px solid #ccc;
+    position:relative;
+    background-size: cover;
+    left:0px;
+    top:0px;
+}
+.nearest span.bankName{
+    position:absolute;
+    top:-33px;
+    left:-10px;
+    padding:6px;
+    font-size:9pt;
+    background-color:black;
+    color:white;
+    border-radius:10px;
+
+}
+.nearest span.bankName .trinagle{
+  position:absolute;
+    left:15px;
+    top:20px;
+  width: 200px;
+  height: 200px;
+  border: 10px solid black;
+  width: 0;
+  height: 0;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: black;
+  border-bottom-color: transparent;
+}
+
+.selected{
+    border:2px solid green !important;
+}
+
+/* takeIt Button */
+
+#takeIt{
+    cursor:pointer;
+    color:white;
+    font-weight:bold;
+    width:100px;
+    height:20px;
+    padding:5px;
+    font-size:10pt;
+    text-align:center;
+    background-color:darkslategray;
+    border-radius:10px;
+    margin:0 auto;
+    margin-bottom:10px;
+    box-shadow: 2px 2px rgba(20,20,20,0.5);
+
+}
+#takeIt:hover{
+    box-shadow: 1px 1px rgba(20,20,20,0.5);
+}
+
+.garanti{
+    background:url("../img/g.jpg") !important;
+    background-size: cover !important;
+}
+.vakif{
+    background:url("../img/v.jpg") !important;
+    background-size: cover !important;
+}
+.is{
+    background:url("../img/i.jpg") !important;
+    background-size: cover !important;
+}
+.ak{
+    background:url("../img/a.jpg") !important;
+    background-size: cover !important;
+}
+
+/* AFTER SCENE ####################################### */
+
+#after{
+    z-index: 3;
+    display:none;
+    position:relative;
+    margin: 0 auto;
+    width: 300px;
+    height:450px;
+    border:2px solid black;
+    border-radius:10px;
+}
+.normal_Text{
+    font-weight:bold;
+    text-align:center;
+}
+
+#number{
+    font-size:46pt;
+    text-align:center;
+}
+#recent{
+    border:1px solid black;
+    text-align:center;
+}
+
+#bankName{
+    z-index:2;
+    position:absolute;
+    bottom:0px;
+    cursor:pointer;
+    color:white;
+    font-weight:bold;
+    width:270px;
+    height:20px;
+    padding:15px;
+    font-size:10pt;
+    text-align:center;
+    background-color:darkslategray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin:0 auto;
+    box-shadow: 2px 2px rgba(20,20,20,0.5);
+}
+
+
+
+/* MOBILE EFFECT */
+
+.mobile{
+    position:relative;
+    left:-2px;
+    top:-7px;
+    margin:0 auto;
+    text-align:center;
+    width:300px;
+    height:60px;
+    background-color:#000;
+    border-left:2px solid black;
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.mobileAfter{
+    position:relative;
+    top:-7px;
+    z-index: 3;
+    margin:0 auto;
+    text-align:center;
+    width:300px;
+    height:60px;
+    background-color:#000;
+    border-left:2px solid black;
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.circle{
+    cursor:pointer;
+    margin:0 auto;
+    text-align:center;
+    position:relative;
+    top:9px;
+    width:50px; 
+    height:50px;
+    border-radius:1000px;
+    background-color:#262626;
+}
+
+.square{
+    width:20px;
+    height:20px;
+    position:relative;
+    top:14px;
+    margin:0 auto;
+    text-align:center;
+    border-radius:5px;
+    border:2px solid #3D3D3D;
+}
